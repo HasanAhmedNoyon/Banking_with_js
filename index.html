@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center mt-1 display-4 ">Welcome to my <span class="text-danger">Bank!!</span></h1>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="login-form">
+        <h1 class="text-center m-2">Login Form</h1>
+        <input type="email" class="form-control m-3" id="email-input" placeholder="Email">
+        <input type="password" class="form-control m-3" id="pass-input" placeholder="Password">
+        <button class="btn btn-success m-3" id="button">Submit</button>
+        <span class="text-center text-dark">Email : hasan@bekar.com <br> Password : bekar</span>
+    </section>
+
+
+
+    <script>
+        document.getElementById('button').addEventListener('click', function () {
+            if (document.getElementById('email-input').value == 'hasan@bekar.com' && document.getElementById('pass-input').value == 'bekar') {
+                window.location.href = 'bank.html'
+            }
+            else {
+                alert('Input Invalid');
+            }
+        })
+    </script>
+
+</body>
+
+</html>
